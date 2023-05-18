@@ -1,0 +1,549 @@
+página 1 sol
+Índice 2 e 3 lua sol
+Dark Evo 4 lua
+O Conto 5 e 6 sol lua
+Regras 7 a 9 sol lua sol
+
+Personagens 10 lua
+
+Condutas
+Verbetes
+Itens
+Combate
+Magias
+Liturânea
+Bestiário
+
+- criar personagens
+- guildas
+- evolução
+-animais ajudantes
+
+Regras Dark Evo
+- iniciativa: por tipo de ação
+-recuperar
+-magias
+
+-combate
+-distâncias: engajado, próximo, distante
+-tipos de ações: combate, inventário, movimento e livre
+-ouro
+
+-tabelas de lesões se A a D
+- mapa do local
+-gerador de encontros
+-gerador de NPCs
+-gerador de monstros
+-monstros prontos
+-status: abatido, desmaiado, morto, sem visão, sem audição, sem olfato, sem fala
+- armas mágicas - Incantare
+
+Um jogo de Alta Fantasia e exploração em uma Idade Média distópica e coberta por uma escuridão sem fim.
+
+Playtest
+https://app.roll20.net/join/11267916/7y92qA
+
+Descanso: há dois tipos de descanso: o Descanso Curto tem
+duração de 1 hora e permite recuperar 1 ponto de Vontade.
+O Descanso Longo tem duração de 8 horas e permite
+recuperar Leões e todos os pontos de Vontade.
+
+-----------------------------------
+
+Tabela de Lesão A
+
+1- Cicatriz permanente. Deve ser aparente, como um corte no rosto ou uma perna manca, sem desvantagem. Se estiver portando uma arma para atacar, ela se quebrou.
+
+2- Corte profundo no ombro, com duração de 6 horas, causando 1 Desvantagem nas Condutas Fortes.
+
+3- Torção no braço, com duração de 4 horas, causando 1 Desvantagem nas Condutas Ágeis.
+
+4- Pancada forte na cabeça, com duração de 2 horas e 1 Desvantagem nas Condutas Inteligentes.
+
+5- Luxação na cintura, com duração de 1 hora, impedindo assumir a posição Engajada.
+
+6- Escoriações superficiais com sangramento brando por 1h, sem desvantagens.
+
+
+
+Tabela de Lesão B
+
+1- Cicatriz permanente evidente. Escolher entre perder um olho, uma orelha ou um dedo da mão. Provoca 1 Desvantagem permanente em Conditas Carismáticas.
+
+2- Corte profundo no abdômen, com duração de 3 dias, causando 1 Desvantagem nas Condutas Fortes.
+
+3- Braço quebrado, com duração de 2 dias, causando 1 Desvantagem nas Condutas Ágeis.
+
+4- Sangramento na cabeça, com duração de 1 dia, causando 1 Desvantagem nas Conditas Inteligentes.
+
+5- Clavícula deslocada, com duração de 12 horas, fazendo com que todos seus ataques tenham 0 de Dano.
+
+6- Escoriações graves na cabeça por 6h, provocando 1 Desvantagem em Mística.
+
+
+
+Tabela de Lesão C
+
+1- Uma de suas mãos foi cortada (perdeu o membro) de forma permanente. Você precisa ser curado ou sangrará até morrer em 1 dia. Se curado, não será mais possível usar armas de duas mãos, portar uma arma e um escudo ao mesmo tempo, ou portar duas armas.
+
+2- Corte profundo no peito, com duração de 9 dias, causando 2 Desvantagens nas Condutas Ágeis.
+
+3- Perna quebrada, com duração de 6 dias, obrigando se mover Vagarosamente.
+
+4- Irritação grave nos olhos, com duração de 3 dias, causando 2 Desvantagens nas Condutas Místicas.
+
+5- Percepção sensorial afetada, com duração de 1 dia, causando 2 Desvantagens nas Condutas Criativas.
+
+6- Sangramento abundante no abdômen por 12h, definindo seu valor máximo de Vontade para 2.
+
+
+
+Tabela de Lesão D
+
+1- Você sofreu um ferimento grave no coração (lesão permanente). Você morrerá em 8 horas. As únicas chances de salvá-lo são a Poção da Vida, a erva Calêndula, ou por meios mágicos pela magia Vita.
+
+2- Uma de suas pernas foi cortada (perdeu o membro) de forma permanente. Você não consegue andar sozinho por 1 dia. Se nenhuma cura for aplicada, você morrerá em 1 dia. Caso o sangramento seja contido, você viverá podendo escolher entre: conseguir uma aparato mecânico (uma cadeira de rodas, por exemplo) para se movimentar ou decidir por aposentar sua personagem (deixanda em alguma cidade como treinadora ou supervisora de outras personagens).
+
+3- Uma de suas mãos foi cortada (perdeu o membro) de forma permanente. Você precisa ser curado ou sangrará até morrer em 1 dia. Se curado, não será mais possível usar armas de duas mãos, portar uma arma e um escudo ao mesmo tempo, ou portar duas armas.
+
+4- Corte profundo no abdômen, com duração de 10 dias, causando 2 Desvantagens nas Condutas Ágeis e Fortes.
+
+5- Maxilar quebrado, com duração de 10 dias. Você não poderá falar por este período e sofrerá 2 Desvantagens nas Condutas Carismática e Criativa.
+
+6- Ambos braços torcidos, com duração de 7 dias. Você terá 1 Desvantagem em todos os Verbetes por este período.
+
+
+------------------------------------
+
+
+
+27x17
+3186 x 2006
+118 pixels por centímetro
+Preto para Vermelho Escuro GIMP -> f02727
+Preto para Vermelho Claro GIMP -> ffb2b2
+
+Enganar
+Entreter (Cantar, Dançar, Tocar)
+Equilibrar
+Escalar
+Esconder nas Sombras
+Esquivar e Desengajar
+Falsificar
+Forjar Armaduras Pesadas
+Forjar Armas Corpo-a-Corpo
+Forragear
+Furtar
+Historiar
+Intimidar
+Investigar Pistas
+Ler e Escrever
+Liderar
+Mover Silenciosamente
+Nadar
+Navegar Barcos e Navios
+Perceber Ambiente ao Redor
+Persuadir
+Praticar Alquimia
+Rastrear
+Reparar Objetos
+Sobreviver nos Ermos
+Treinar Animais
+
+Curatio (Cura) - Salvagente
+Daemonium (Demônio), Literato
+Fortitudo (Fortitude), Literato
+Glacies (Gelo) - Salvagente, Literato
+Ignis (Fogo), Literato
+Incantare (Encantar) - Salvagente, Literato
+Invocare (Invocar), Literato
+Lux (Luz) - Salvagente, Literato
+Mortus (Necromancia), Literato
+Praesidium (Proteção), Literato
+Puritas (Pureza) - Salvagente
+Sanguis (Sangue), Literato
+Saxum (Pedra), Literato
+Somnum (Dormir) - Salvagente, Literato
+Tempus (Tempo) - Salvagente, Literato
+Umbra (Sombra), Literato
+Venenum (Veneno), Literato
+Ventus (Vento), Literato
+Veritas (Verdade) - Salvagente
+Visio (Visão), Literato
+Vita (Vida) - Salvagente
+
+
+https://www.the-qrcode-generator.com/
+
+http://dontpad.com/osomdaespada
+
+artes livres
+https://denungeherrholm.smugmug.com/Other-Arts/Free-Art-Fridays/
+
+Mapa:
+Liturânea
+
+Pelejas
+Literatos
+Corjus
+Salvagentes
+Mascates
+
+FR 6
+AG 6
+CR 6
+CA 6
+IN 12
+MI 2
+
+
+
+Humanos
+Elfos
+Anãos
+Halflings
+Orcs
+
+
+Cor rosa:
+ff6464
+
+Rosa dado:
+ff6565
+
+Vermelho dado:
+340000
+
+cor vermelho escuro:
+340000
+
+cor intermediária:
+5a0909
+
+Vantagem: rerolar 1 dado, exceto se for 1
+Ajuda de 1: rerolar 1 dado, exceto se for 1
+Ajuda de 2: rerolar 2 dados, exceto se for 1
+
+Benefícios mecânicos:
+Rerola se tirar 1 no ataque (atacante)
+Aumenta tabela de efeito (atacante)
+Reduz o resultado da tabela em 1 (atacante)
+Aumenta o resultado da tabela em 1 (defensor)
+Rola duas vezes a vitalidade e pega o menor (atacante)
+Mais dano (sempre tira 1 no mínimo)
+Reduz alvo, mínimo 4
+Adiciona 1 dado, máximo 2
+Escolha 1 dado para rerolar
+Escolha 1 dado para dar +1
+
+169,2549 px
+
+Se tirar 1 e 1, quebra a arma ou sofre consequência, ou dano
+Se tirar 6 e 6, joga direto na tabela de lesão
+
+1d6 com 4: 50%
+1d6 com 5: 33%
+1d6 com 6: 17%
+
+2d6 com 4: 75%
+2d6 com 5: 56%
+2d6 com 6: 31%
+
+Dano 4
+Proteção 4
+
+Palavras para marcar:
+Proteção ao Dano
+Dano
+Vitalidade
+Jogada de Ataque
+Tabela de Lesões
+
+Condutas:
+Forte - Lutar, Defender, Armas Corpo-a-Corpo, Atletismo
+Ágil - Armas à Distância, Furtar, Acrobacia, Furtividade
+Criativa - Entreter, Cozinhar, Analisar, Pintar
+Carismática - Persuadir, Intimidar, Treinar Animais, Enganar
+Inteligente - Investigar, Historiar, Rastrear, Reparar
+Mística - Curar, Atacar, Defender, Suportar
+
+
+
+Personagens lesionados sofrerão com os efei-
+tos até a passagem do período definido na lesão, geralmen-
+te definidos em horas ou Descansos Longos.
+
+
+Dois pontos: 1 adiciona um dado, 2 permite somar +1 ao resultado de um dos dados rolados, exceto se o resultado do dado for 1 natural.
+
+Verbetes:
+2 pontos.
+1 ponto reduz o alvo para 5
+2 ponto reduz o alvo para 4
+
+Ambidestria
+Duas Mãos
+Tabela de Lesão
+
+
+>> Incantare
+
+
+Abrir Fechaduras
+Atacar Corpo-a-Corpo
+Atacar Desarmado
+Atacar à Distância
+Barganhar
+Cavalgar
+Caçar
+Confeccionar Armaduras Leves
+Confeccionar Armas de Madeira
+Conhecer Idiomas
+Cozinhar
+Curar Ferimentos
+Enganar
+Entreter (Cantar, Dançar, Tocar)
+Equilibrar
+Escalar
+Esconder nas Sombras
+Esquivar e Desengajar
+Falsificar
+Forjar Armaduras Pesadas
+Forjar Armas Corpo-a-Corpo
+Forragear
+Furtar
+Historiar
+Intimidar
+Investigar Pistas
+Ler e Escrever
+Liderar
+Mover Silenciosamente
+Nadar
+Navegar Barcos e Navios
+Perceber Ambiente ao Redor
+Persuadir
+Praticar Alquimia
+Rastrear
+Reparar Objetos
+Sobreviver nos Ermos
+Treinar Animais
+
+
+Escudos
+Ferramentas
+
+Alquimia
+Carpintaria
+Couraria
+Ferreiro
+Ladrão
+
+
+fole, martelos próprios (estampa), maço, mandril, e algumas pinças
+
+Ferramentas de Alquimia - Praticar Alquimia inviabiliza
+Ferramentas de Carpintaria - Confeccionar Armas de Madeira inviabiliza
+Ferramentas de Couraria - Confeccionar Armaduras Leves inviabiliza
+Ferramentas de Ferreiro - Forjar Armaduras Pesadas e Forjar Armas Corpo-a-Corpo inviabiliza
+Ferramentas de Ladrão - Abrir Fechaduras 2 Desvantagens
+
+
+50 Cardamomo: Erva aromática usada como especiaria
+100 Cimicifuga: Rizoma (caule subterrâneo) com fins medicinais
+50 Confrey: Folhas ou emplastro para fins medicinais
+80 Alcachofra: Erva cujas flores têm caráter esotético
+70 Babosa: Erva suculenta que auxilia a cicatrização
+80 Camomila: Erva geralmente diluída para acalmar
+120 Valeriana: Erva cujo extrato tem efeitos sedativos
+50 Equinácea: Erva cujas raízes têm efeitos de antivenenos
+70 Oleandro: Arbusto cujas folhas possuem alta toxicidade
+80 Alecrim: Planta aromática com efeito esotético
+200 Calêndula: Erva cujas pétalas têm efeitos medicinais
+
+
+
+
+————-
+Ping da corda
+
+RoPe-Gunnet
+
+Zomos LoucoZ
+
+Sleep No More
+
+zombiezide
+
+
+Retificações das regras (já incluídas no PDF desta página):
+⁃ O verbete de Combate “Disparar Arma”, além de ser usado para armas de fogo, também deve ser usado para as jogadas com arcos e bestas.
+⁃ O verbete de combate “Recarregar” também deve ser utilizado para recarregar uma flecha no arco, ou um virote na besta, ambos consumindo uma Ação Rápida quando o verbete estiver marcado, ou Ação Lenta caso contrário.
+⁃ As jogadas de salvaguarda são realizadas contra o alvo 6 ou contrapostas às jogadas do personagem atacante. Em ambos os casos se obtém sucesso com um resultado MAIOR OU IGUAL ao valor alvo, ou com pelo menos um resultado 6 nos dados.
+⁃ Para recuperar-se da Corrupção, além do descanso de 8h de sono, se faz necessária uma “meditação” de 1h hora ao acordar. Tal meditação tende a afastar o personagem do Desmundo, reduzindo seus pontos de corrupção à zero.
+
+
+
+
+
+Dados de 6, sendo os atributos começando com 2 dados, +1 para o biônico, +2 para o cibernético
+
+Vou comprar uma bolha
+
+Ao jogar os dados, igual ou maior que de 10 é sucesso. Os conhecimentos (skills) adicionam um dado.
+
+Separa-se o menor e o maior dado da rolagem para destacar qual deles vai causar dano, e qual deles vai aumentar o stress.
+
+Possível mecânica de stress: se o dado for maior que o nível atual de stress (que é de 1 a 6), não acontece nada. Se for menor ou igual, aumenta um nível de stress. Se chegar a 6 o personagem colapsa.
+
+Há 3 seres:
+biológico (estresse e vitalidade). Dados: 1d20, 1d16, 1d16 e 1d12
+biônico: vitalidade e integridade. Dados: 1d24, 1d20, 1d16 e 1d12
+cibernético: integridade. Dados: 1d30, 1d24, 1d24 e 1d20
+
+Estresse, aumenta pelo dado de ação, e reduz pelo outro dado. Reduz com descanso.
+Vitalidade, pontos de vida, reduz com dano e recupera com medicamentos e descanso.
+Integridade: reduz com o menor dado. Recupera com manutenção.
+
+Atributos:
+Estrutura física
+Aspecto mental
+Agilidade inata
+Reação ambiental
+
+O desequilíbrio do universo
+
+Arquiteto da dungeon?
+E se criar um “trabalho” para os jogadores: mapeiro, diário, finanças e inventário, revisão
+
+
+Sistema de destruição
+
+
+E se os personagens escolherem uma “vibe”
+
+
+Bolando nome:
+Morrer
+Mortal
+Morte
+Sono
+Dormir
+Alma
+Cosmo
+Mente
+
+Alquimista
+Necromante
+Tecnocracia
+Necromancia
+
+Almocracia
+Cosmocracia
+Sonoastra
+Almoasta
+Almancer
+Cosmomancer
+
+Cosmomante: um ser daqui indo para lá
+Sonâmbulo: um ser de lá vindo pra cá
+
+
+
+
+REGRAS ANTIGAS
+
+O Som da Espada
+
+Ataque:
+
+
+Pontos de vida:
+d6 - Ao receber um golpe, joga-se o dado. Se tirar 1, morre.
+
+
+Sempre joga 1d6. Haverá Proficiências (que da +1d6), ligadas a um conjunto de itens (cada item +1d6). Se obtiver 6 é sucesso, porém, cada "alvo" é definido com base em um grupo de 5 opções (de 1 a 5), em que o narrador ou jogador adversário escolhe para que o número correspondente também seja indicativo de sucesso caso suja nos dados. Por exemplo: posição defensiva (número 1). Isso significa que se o atacante tirar 6 ou 1, ele acerta.
+
+Um personagem for acertado, ele ganha 1 dado de ferimento. E joga esse dado. Se tirar 1, morre. Outros dados de ferimento podem ser adquiridos. O personagem pode adquirir no máximo 6 ferimentos. Sempre joga um número de dados igual a ferimento atual. Se tirar 1, morre. Recupera 1 dado por dia de descanso. Também recupera com uma ação de cura.
+
+
+Guildas:
+
+
+Pelejas
+Mascates
+Literatos
+Pagãos
+Corjus
+
+
+
+-------------------
+
+
+Pelejas
+
+Kit de Equipamentos 1
+
+'Espada Curta', 'Corselete Acolchoado', 'Escudo de Madeira', 'Pederneira', 'Queijo', 'Odre de Cerveja', 'Coldre de Água'
+
+
+
+Kit de Equipamentos 2
+
+'Bardiche', 'Armadilha de Urso', 'Corselete Acolchoado', 'Tocha', 'Carne Seca', 'Odre de Cerveja', 'Coldre de Água'
+
+
+
+Mascates
+
+Kit de Equipamentos 1
+
+'Punhal', 'Punhal', 'Corselete de Couro', 'Flauta Doce', 'Coldre de Água', 'Carne Seca', 'Ânfora de Óleo' 'Ferramentas de Ladrão'
+
+
+
+Kit de Equipamentos 2
+
+'Arco Curto', 'Flechas', 'Corselete de Couro', 'Corda de Cânhamo', 'Frutas', 'Coldre de Água', 'Ferramentas de Ladrão'
+
+
+
+Salvagentes
+
+Kit de Equipamentos 1
+
+'Maça', 'Corselete de Couro', 'Escudo de Madeira', 'Açúcar Mascavo', 'Peixe', 'Coldre de Água', 'Símbolo Divino'
+
+
+
+Kit de Equipamentos 2
+
+'Funda', 'Pedras de Funda', 'Corselete de Couro', 'Escudo de Madeira', 'Ração de Viagem', 'Coldre de Água', 'Símbolo Divino'
+
+
+
+Corjus
+
+Kit de Equipamentos 1
+
+'Arco Curto', 'Flechas', 'Corselete de Couro', 'Legumes Frescos', 'Coldre de Água', 'Corda de Cânhamo', 'Ferramentas de Carpintaria'
+
+
+
+Kit de Equipamentos 2
+
+'Zarabatana', 'Ferpas de Madeira', 'Escudo de Madeira', 'Corselete de Couro', 'Frutas', 'Coldre de Água', 'Ferramentas de Couraria'
+
+
+
+Literatos
+
+Kit de Equipamentos 1
+
+'Funda', 'Pedras de Funda', 'Tinta e Pena', 'Coldre de Água', 'Pão', 'Grimório'
+
+
+
+Kit de Equipamentos 2
+
+'Adaga', 'Tinta e Pena', 'Papiro', 'Coldre de Água', 'Carne Seca', 'Grimório'

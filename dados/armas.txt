@@ -1,0 +1,184 @@
+Brigandina*
+Corselete Acolchoado
+Corselete de Couro
+Gibão de Peles
+Loriga*
+Robe de Couro
+
+
+
+Brunea
+Cota de Malha
+Cota de Talas
+Loriga Segmentada
+Armadura de Batalha
+Armadura Completa
+Elmo
+
+
+
+
+
+
+
+
+
+Poção de Iniciativa
+Cura Lesões Graves
+Cura Lesões Leves
+Poção da Verdade
+Poção do Vigor
+Entorpecente
+Calmante Natural
+Antídoto
+Veneno Natural
+Elixir da Vontade
+Poção da Vida
+Óleo da Ferrugem
+Ânfora de Ácido
+Ânfora de Óleo
+Bomba de Fumaça
+Odre Explosivo
+
+
+
+
+Poção de Iniciativa
+Poção de Cardamomo que permite agir primeiro no Combate, independente da ação. Duração 8 hora.
+
+Cura Lesões Graves
+Poção de Cimicifuga que cura Lesão não permanente e anula efeitos mecânicos negativos de Lesões permanentes.
+
+Cura Lesões Leves
+Emplastro de Confrey que reduz Lesão em 3 dias.
+
+Poção da Verdade
+Chá ou vapor de Alcachofra. Aquele que ingerir ou inalar sempre falar a verdade. Duração de 2h.
+
+Poção do Vigor
+Poção de Babosa que concede +1 de Proteção por 1 hora.
+
+Entorpecente
+Chá ou vapor de Camomila. Concede 2 Vantagens em Condutas Carismáticas
+contra aquele que consumir ou inalar. Duração 2 hora.
+
+Calmante
+Poção de Valeriana. Quem ingerir dorme profundamente por 1 dia.
+
+Antídoto
+Poção de Equinácea que cura qualquer Envenenamento (tipo de Lesão).
+
+Veneno Natural
+Poção de Oleandro capaz de envenenar até 3 pessoas. Quem ingerir deve rolar 1d6 e consultar na Tabela de Lesões de Envenenamentos.
+
+Elixir da Vontade
+Poção de Alecrim que recupera todos os pontos de Vontade.
+
+Poção da Vida
+Poção de Calêndula que permite estabilizar personagens recém mortos (no
+máximo há 10 turnos). Neste caso eles ficarão desacordados por 1 hora.
+
+
+
+
+
+----------------
+
+Lança
+Machado de Lenhador
+Pique
+Clava com Espinhos
+Tridente
+Martelo de Batalha
+Machado de Guerra
+Arco Longo
+Guisarme
+Fauchard Gancho
+Spetum
+Ranseur
+Bec de Corbin
+Martelo Lucerno
+Partisan
+Espada Larga
+Espada Bastarda
+Besta Pesada
+Espada Longa
+Glaive
+Glaive Guisarme
+Flamberge
+Alabarda
+Bill-Guisarme
+Voulge
+Montante
+Claymore
+Arco Longo Composto
+
+
+Clava
+Martelo
+Bastão
+Açoite
+Foice
+Cajado
+Cajado-Funda
+Mangual
+Maça
+Espada Curta
+Azagaia
+Maça-Estrela
+Cetro
+Machado
+Machete
+Bidente
+Sabre
+Armadilha de Urso
+Cimitarra
+Gládio
+Falchion
+Fauchard
+Khopesh
+Besta Leve
+Arpão (9m de corda)
+Aprisionador
+Bardiche
+Bordona
+Arco Curto Composto
+Alfange
+
+-------------------------
+
+12 Armas Leves
+
+Adaga
+Arco Curto
+Besta de Mão
+Chicote
+Dardo
+Estrepe
+Faca
+Funda
+Machadinha
+Punhal
+Rapieira
+Zarabatana
+
+Projéteis
+Ferpas de Madeira
+Agulhas de Costura
+Pedras de Funda
+Flechas
+Virotes
+Quadrelos
+
+8 instrumentos
+
+ instrumento de cordas semelhante a uma harpa
+
+Alaúde: Cordofones em formato de pêra com 11 cordas
+Charamela
+Flauta Doce
+Lira
+Tambor
+Trombeta
+Viola
+Xilofone

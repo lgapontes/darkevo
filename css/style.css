@@ -1,0 +1,1346 @@
+@font-face {
+    font-family: 'AlegreyaRegular';
+    src: url('../fonts/Alegreya-Regular.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+         url('../fonts/Alegreya-Regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+@font-face {
+    font-family: 'AlegreyaBold';
+    src: url('../fonts/Alegreya-Bold.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+         url('../fonts/Alegreya-Bold.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+@font-face {
+    font-family: 'SketchGothicSchool';
+    src: url('../fonts/Sketch-Gothic-School.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+         url('../fonts/Sketch-Gothic-School.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+* {
+  font-family: AlegreyaBold;
+  color: #2B0C10;
+}
+
+br {
+  clear: both;
+}
+
+#invisible_form {
+  display: none;
+}
+
+#loading {
+    display: block;
+    z-index: 5;
+    background-color: #FCFEFC;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    opacity: 0.8;
+}
+
+#loading img.loading {
+  display: block;
+  height: 100px;
+  margin: 200px auto;
+}
+
+header {
+  display: block;
+  width: 100%;
+  min-width: 400px;
+  height: 80px;
+
+  background-image: url(../img/header.webp);
+  box-sizing: border-box;
+  box-shadow: 0 2px 15px #D0D0D0;
+
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+header a.logo {
+  display: block;
+  margin: 0 auto 0 auto;
+  height: 80px;
+  text-align: center;
+}
+
+header a.logo img {
+  height: 80px;
+  /*
+  filter: grayscale(100%);
+  opacity: 0.8;
+  */
+}
+
+#ficha {
+  display: none;
+}
+
+#itens {
+  display: none;
+}
+
+main {
+  display: block;
+  margin: 0;
+  margin: 20px auto 40px auto;
+  width: 100%;
+  min-width: 400px;
+  max-width: 800px;
+
+  background-image: url(../img/background.jpg);
+  background-repeat: repeat;
+  background-position: center;
+  box-sizing: border-box;
+
+  box-shadow: 0 0 20px #000000 inset;
+  border-radius: 10px;
+
+  border: 0;
+  padding: 0;
+
+  font-size: 1.5em;
+}
+
+main div.borda {
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  border: 3px solid #000;
+  border-radius: 10px;
+  padding: 10px 10px 30px 10px;
+
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 10px #000000 inset;
+
+  background-image: url(../img/sol_lua.png);
+  background-position: center top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+main#itens div.borda {
+  background-image: none;
+  background-color: rgba(255, 243, 224, .7);
+  padding: 10px 10px 20px 10px;
+}
+
+main#itens div.borda div.label {
+  line-height: 1em;
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-size: 0.8em;
+  font-family: AlegreyaRegular;
+
+  display: block;
+  float: left;
+  width: 100%;
+  z-index: 1;
+  margin-top: 10px;
+}
+
+main#itens div.borda div.label strong {
+  font-family: AlegreyaBold;
+}
+
+main#itens div.borda div.label span.ouro {
+  color: #bf360c;
+}
+
+main div.borda::after {
+  height: 0;
+  content: '';
+  clear: both;
+  display: block;
+}
+
+main div.borda div.logo-ficha {
+  display: block;
+  float: left;
+  width: 100%;
+  z-index: 0;
+  box-sizing: border-box;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  margin-top: -10px;
+  text-align: center;
+}
+
+main div.borda div.logo-ficha img {
+  display: inline;
+  height: 100px;
+}
+
+main div.borda div.label {
+  display: block;
+  float: left;
+  width: 100%;
+  z-index: 1;
+  margin-top: 4px;
+}
+
+main div.borda div.p50 {
+  width: 50%;
+}
+
+main div.borda div.label::after {
+  height: 0;
+  content: '';
+  clear: both;
+  display: block;
+}
+
+main div.borda div.label-jogador {
+  margin-top: -10px;
+}
+
+main div.borda div.label label {
+  display: block;
+  float: left;
+  line-height: 36px;
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  text-align: right;
+  padding-right: 10px;
+
+  box-shadow: inset -30px 0 9px -10px rgba(43,12,16,0.3);
+}
+
+main div.borda div.label input[type=text], main div.borda div.label select {
+  display: block;
+  float: left;
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  border-left: 2px solid rgb(43,12,16);
+  text-indent: 5px;
+  padding: 0;
+  height: 36px;
+  background-color: rgba(43,12,16,0.3);
+  font-family: AlegreyaRegular;
+  color: #2B0C10;
+  font-size: 1em;
+
+  box-shadow: inset -30px 0 9px -16px rgba(43,12,16,0.3);
+}
+
+main div.borda div.label textarea {
+  display: block;
+  float: left;
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  border-left: 2px solid rgb(43,12,16);
+  padding: 0;
+  padding-left: 5px;
+  background-color: rgba(43,12,16,0.3);
+  font-family: AlegreyaRegular;
+  color: #2B0C10;
+  font-size: 0.8em;
+  box-shadow: inset -30px 0 9px -16px rgba(43,12,16,0.3);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  resize: none;
+}
+
+main div.borda div.label select option {
+  font-family: AlegreyaRegular;
+  font-size: 1em;
+}
+
+main div.borda div.label input[type=text].center {
+  text-align: center;
+  text-indent: 0;
+}
+
+main div.borda div.label label.p40 {
+  width: 36%;
+}
+
+main div.borda div.label-detalhes label {
+  height: 100px;
+  padding-top: 4px;
+  line-height: 24px;
+  font-size: 0.9em;
+}
+
+main div.borda div.label-lesao label {
+  height: 100px;
+  text-align: center;
+}
+
+main div.borda div.label-lesao label > span {
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-align: center;
+}
+
+main div.borda div.label-lesao label > input[type=text] {
+  display: inline;
+  float: none;
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  font-family: AlegreyaRegular;
+  color: #2B0C10;
+  font-size: 1em;
+  box-shadow: none;
+  text-align: center;
+  text-indent: 0;
+  padding-bottom: 4px;
+
+  background-color: rgba(43,12,16,0.3);
+  background-image: url(../img/marcador2.png);
+  background-position: center;
+  background-size: 50px;
+  background-repeat: no-repeat;
+}
+
+main div.borda div.label-vontade label.p40 {
+  box-shadow: none;
+  text-align: center;
+  height: 100px;
+}
+
+main div.borda div.label-vontade label.p40 > img {
+  display: inline;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  height: 100%;
+}
+
+main div.borda div.label-vontade label.vontade {
+  display: block;
+  float: left;
+  line-height: 36px;
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  text-align: center;
+  box-shadow: none;
+  width: 32%;
+  height: 100px;
+}
+
+main div.borda div.label-vontade label.vontade > span {
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-align: center;
+}
+
+main div.borda div.label-vontade label.vontade > span.menor {
+  font-size: 0.8em;
+}
+
+main div.borda div.label-vontade label.vontade > input[type=text] {
+  display: inline;
+  float: none;
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  font-family: AlegreyaRegular;
+  color: #2B0C10;
+  font-size: 1em;
+  box-shadow: none;
+  text-align: center;
+  text-indent: 0;
+  padding-bottom: 4px;
+
+  background-color: rgba(43,12,16,0.3);
+  background-image: url(../img/marcador2.png);
+  background-position: center;
+  background-size: 50px;
+  background-repeat: no-repeat;
+}
+
+main div.borda div.label-vontade label.protecao {
+  display: block;
+  float: left;
+  line-height: 36px;
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  text-align: center;
+  box-shadow: none;
+  width: 64%;
+  height: 100px;
+}
+
+main div.borda div.label-vontade label.protecao > span {
+  display: inline-block;
+  width: 100%;
+}
+
+main div.borda div.label-vontade label.protecao > div.checkbox {
+  display: inline-block;
+  float: none;
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  border-radius: 0;
+  height: 45px;
+  width: 45px;
+  color: #2B0C10;
+  font-family: monospace;
+  font-size: 2em;
+  line-height: 65px;
+  box-shadow: none;
+  text-align: center;
+  text-indent: 0;
+  padding-bottom: 0;
+
+  background-color: rgba(43,12,16,0.3);
+  background-image: url(../img/quadrado2.png);
+  background-position: center;
+  background-size: 50px;
+  background-repeat: no-repeat;
+}
+
+main div.borda div.label-vontade label.protecao > div.checkbox[checked=true]::after {
+  content: '';
+  display: block;
+  background-color: #2B0C10;
+  height: 30px;
+  width: 30px;
+  margin-left: 7px;
+  margin-top: 7px;
+}
+
+main div.borda div.label input[type=text].p60 {
+  width: 64%;
+}
+
+main div.borda div.label select.p60 {
+  width: 64%;
+}
+
+main div.borda div.label textarea.p60 {
+  width: 64%;
+  height: 100px;
+}
+
+main div.borda div.label label.p70 {
+  width: 71.5%;
+}
+
+main div.borda div.label input[type=text].p30 {
+  width: 28.5%;
+}
+
+main div.borda div.label label.p50 {
+  width: 50%;
+}
+
+main div.borda div.label input[type=text].p50 {
+  width: 50%;
+}
+
+main div.borda h1 {
+  display: block;
+  float: left;
+  width: 100%;
+  z-index: 1;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 4px;
+  padding-left: 10px;
+  border-bottom: 2px solid rgb(43,12,16);
+
+  font-family: SketchGothicSchool;
+  color: #2B0C10;
+  font-size: 2em;
+  font-weight: normal;
+  line-height: 40px;
+}
+
+main div.borda div.campos {
+  display: block;
+  float: left;
+  width: 100%;
+  z-index: 1;
+  margin-top: 8px;
+}
+
+main div.borda div.campos::after {
+  height: 0;
+  content: '';
+  clear: both;
+  display: block;
+}
+
+main div.borda div.campos > div.checkbox {
+  display: block;
+  float: left;
+  box-sizing: border-box;
+  margin: 0 0 0 4px;
+  border: 0;
+  padding: 0;
+  border-radius: 0;
+  height: 25px;
+  width: 25px;
+  color: #2B0C10;
+  font-family: monospace;
+  font-size: 2em;
+  line-height: 35px;
+  box-shadow: none;
+  text-align: center;
+  text-indent: 0;
+  padding-bottom: 0;
+
+  background-color: rgba(43,12,16,0.3);
+  background-image: url(../img/quadrado2.png);
+  background-position: center;
+  background-size: 30px;
+  background-repeat: no-repeat;
+}
+
+main div.borda div.campos > div.checkbox[checked=true]::after {
+  content: '';
+  display: block;
+  background-color: #2B0C10;
+  height: 20px;
+  width: 20px;
+  margin-left: 2.5px;
+  margin-top: 2.5px;
+}
+
+main div.borda div.campos > label {
+  display: block;
+  float: left;
+  line-height: 24px;
+  font-size: 1.2em;
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  text-align: left;
+  margin-left: 4px;
+
+  box-shadow: none;
+}
+
+main div.borda div.campos > span.rosa {
+  display: block;
+  float: left;
+  line-height: 24px;
+  font-size: 1.1em;
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  text-align: left;
+  margin-left: 4px;
+  box-shadow: none;
+  text-transform: uppercase;
+  color: #8E4433;
+}
+
+main div.borda div.campos > span.rosa-menor {
+  text-transform: none;
+}
+
+main div.borda div.verbetes {
+  width: 100%;
+  margin-top: 4px;
+}
+
+main div.borda div.verbetes > div.checkbox {
+  margin: 0 0 0 2px;
+  height: 20px;
+  width: 20px;
+  line-height: 30px;
+
+  background-size: 25px;
+}
+
+main div.borda div.verbetes > div.checkbox[checked=true]::after {
+  content: '';
+  display: block;
+  background-color: #2B0C10;
+  height: 15px;
+  width: 15px;
+  margin-left: 2.5px;
+  margin-top: 2.5px;
+}
+
+main div.borda div.verbetes > label {
+  line-height: 20px;
+  font-size: 0.9em;
+}
+
+main div.borda div.verbetes > span.rosa {
+  line-height: 20px;
+  font-size: 0.9em;
+}
+
+main div.borda div.menor1 > label {
+  font-size: 0.8em;
+}
+
+main div.borda div.menor1 > span {
+  font-size: 0.8em;
+}
+
+main div.borda img.icone {
+  display: block;
+  float: left;
+
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+
+  width: 26%;
+  max-width: 100px;
+  margin-top: 10px;
+}
+
+main div.borda h1.icone {
+  width: 73%;
+}
+
+main div.borda h1.espaco {
+  padding-top: 26px;
+}
+
+main div.borda div.label-ouro {
+  width: 70%;
+}
+
+main div.borda div.label-ouro label.p40 {
+  width: 26%;
+}
+
+main div.borda div.label-ouro input[type=text].p60 {
+  width: 30%;
+}
+
+main div.borda div.itens-colunas-borda {
+  border-bottom: 2px solid rgb(43,12,16);
+}
+
+main div.borda div.coluna1 {
+  width: 30%;
+}
+
+main div.borda div.coluna2 {
+  width: 56%;
+  margin-left: 1%;
+}
+
+main div.borda div.coluna3 {
+  width: 12%;
+  margin-left: 1%;
+  font-size: 0.8em;
+}
+
+main div.borda div.itens-colunas label {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-shadow: none;
+  text-align: left;
+}
+
+main div.borda div.itens-colunas input[type=text], main div.borda div.itens-colunas input[type=number] {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  text-indent: 2px;
+  padding: 0;
+  height: 34px;
+  background-color: rgba(43,12,16,0.3);
+  font-family: AlegreyaRegular;
+  color: #2B0C10;
+  font-size: 0.7em;
+  box-shadow: none;
+}
+
+main div.borda div.itens-colunas input[type=number] {
+  text-align: center;
+  text-indent: 0;
+  font-size: 0.9em;
+}
+
+/* Opcoes do site */
+
+div.opcoes-site {
+  display: block;
+  margin: 20px auto 40px auto;
+  width: 100%;
+  min-width: 400px;
+  max-width: 800px;
+  background-color: #ffffff;
+  box-shadow: none;
+  border: 0;
+  padding: 0;
+
+  text-align: center;
+}
+
+div.opcoes-site::after {
+  height: 0;
+  clear: both;
+  display: block;
+  content: '';
+}
+
+div.opcoes-site div.cartao {
+  display: inline-block;
+
+  padding: 10px;
+  box-sizing: border-box;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  box-shadow: 0px 0px 30px rgb(0 0 0 / 30%);
+  background-image: url(../img/cartao.png);
+  background-position: center;
+  margin: 10px;
+  border-radius: 15px;
+  color: #000;
+}
+
+div.opcoes-site div.cartao h2 {
+  display: block;
+  width: 100%;
+  text-align: center;
+
+  box-sizing: border-box;
+  border: 0;
+  margin: 0 auto;
+  padding: 0;
+
+  font-family: AlegreyaBold;
+  color: #cf6464;
+  font-size: 1.2em;
+  line-height: 20px;
+}
+
+div.opcoes-site div.cartao > img {
+  display: block;
+  width: 92.5px;
+  text-align: center;
+
+  box-sizing: border-box;
+  border: 0;
+  margin: 10px auto;
+  padding: 0;
+}
+
+div.opcoes-site div.cartao > img.menor {
+  width: 80px;
+}
+
+div.formularios {
+  display: none;
+
+  box-sizing: border-box;
+  margin: 20px auto 20px auto;
+  width: 100%;
+  min-width: 400px;
+  max-width: 800px;
+  box-shadow: none;
+  border: 0;
+  padding: 10px;
+  box-shadow: 0px 0px 30px rgb(0 0 0 / 30%);
+  background-image: url(../img/cartao.png);
+  background-position: center;
+  border-radius: 15px;
+}
+
+div.formularios::after {
+  height: 0;
+  display: block;
+  content: '';
+  clear: both;
+}
+
+div.formularios > h2 {
+  display: block;
+  width: 100%;
+
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0;
+
+  font-family: AlegreyaBold;
+  color: #cf6464;
+  font-size: 1.4em;
+  line-height: 30px;
+}
+
+div.formularios > span.texto {
+  display: block;
+  width: 100%;
+
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0;
+
+  font-family: AlegreyaRegular;
+  color: #2B0C10;
+  font-size: 1em;
+}
+
+div.formularios > span.texto > a {
+  font-family: AlegreyaRegular;
+  color: #cf6464;
+}
+
+div.formularios > span.texto > strong {
+  color: #cf6464;
+}
+
+div.formularios div.centralizar {
+  display: block;
+  float: none;
+  position: static;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+  width: 382px;
+}
+
+div.formularios div.centralizar > label {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+div.formularios div.centralizar > label > span.campo {
+  display: inline-block;
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0;
+
+  font-family: AlegreyaBold;
+  color: #2B0C10;
+  font-size: 1em;
+}
+
+div.formularios div.centralizar > label > span.parcial {
+  width: 52px;
+  padding-top: 3px;
+}
+
+div.formularios div.centralizar > label > span.campo-vermelho {
+  color: #cf6464;
+}
+
+div.formularios div.centralizar > label > input[type=text] {
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 3px 0 0 10px;
+  text-indent: 3px;
+  padding: 0;
+  height: 26px;
+  width: 315px;
+  background-color: rgba(0,0,0,0);
+
+  font-family: AlegreyaBold;
+  color: #2B0C10;
+  font-size: 1em;
+  border: 1px solid black;
+
+  border-radius: 0;
+  box-shadow: none;
+}
+
+div.formularios div.centralizar > label > select {
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0 0 0 10px;
+  text-indent: 3px;
+  padding: 0;
+  height: 26px;
+  width: 175px;
+  background-color: rgba(0,0,0,0);
+
+  font-family: AlegreyaBold;
+  color: #2B0C10;
+  font-size: 1em;
+
+  border-radius: 0;
+  box-shadow: none;
+}
+
+div.formularios div.centralizar > label > br + select, div.formularios div.centralizar > div.box + label > select {
+  margin: 4px 0 0 0;
+  width: 379px;
+}
+
+div.formularios div.centralizar > label > br + select.espaco {
+  margin: 4px 0 4px 0;
+}
+
+div.formularios div.centralizar > label > select > option {
+  font-family: AlegreyaRegular;
+  font-size: 1em;
+  border-radius: 0;
+  text-indent: 3px;
+}
+
+div.formularios div.centralizar > div.box {
+  display: block;
+  width: 379px;
+
+  box-sizing: border-box;
+  border: 2px solid #eeeeee;
+  margin: 4px 0 4px 0;
+  padding: 2px;
+
+  font-family: AlegreyaRegular;
+  font-size: 1.0em;
+  color: #212121;
+  background-color: #eeeeee;
+  font-weight: normal;
+  min-height: 30px;
+}
+
+div.formularios div.centralizar > div.box#criar_personagem_texto_guilda {
+  min-height: 200px;
+}
+
+div.formularios div.centralizar > div.box-espaco-menor {
+  margin: 4px 0 0 0;
+}
+
+div.formularios div.centralizar > div.box-selecionado {
+  border: 2px solid #cf6464;
+  background-color: #dddddd;
+}
+
+div.formularios div.centralizar > div.box > span.bold {
+  font-family: AlegreyaBold;
+}
+
+div.formularios > button {
+  height: 35px;
+
+  border-radius: 6px;
+  box-sizing: border-box;
+  border: 2px solid #340000;
+  padding: 2px;
+
+  float: right;
+  margin-left: 8px;
+
+  box-shadow: 2px 2px 2px #999999;
+}
+
+div.formularios > button.left {
+  float: left;
+  margin-left: 0;
+}
+
+div.formularios > button > img {
+  display: block;
+  float: left;
+
+  height: 26px;
+  border: 0;
+  padding: 0;
+  margin: 0 4px 0 4px;
+}
+
+div.formularios > button > span {
+  display: block;
+  float: left;
+
+  line-height: 26px;
+  font-family: AlegreyaBold;
+  font-size: 1.2em;
+
+  border: 0;
+  padding: 0;
+  margin: 0 4px 0 0;
+
+  color: #340000;
+}
+
+div.formularios > button::after {
+  display: block;
+  height: 0;
+  clear: both;
+  content: '';
+}
+
+#vanilla-toast.default {
+  border: 2px solid #ffffff;
+  background: rgba(0, 0, 0, 1);
+}
+
+#vanilla-toast-text {
+  font-size: 1em;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 500px) {
+  main {
+    font-size: 1.2em;
+  }
+
+  main div.borda div.logo-ficha img {
+    height: 140px;
+  }
+
+  main div.borda div.label-jogador {
+    margin-top: -10px;
+    width: 40%;
+  }
+
+  main div.borda div.label-personagem {
+    margin-top: -10px;
+    width: 59%;
+    margin-left: 1%;
+  }
+
+  main div.borda div.label-guilda {
+    width: 50%;
+  }
+
+  main div.borda div.label-guilda label.p40 {
+    width: 28.5%;
+  }
+
+  main div.borda div.label-guilda select.p60 {
+    width: 71.5%;
+  }
+
+  main div.borda div.label-detalhes label.p40 {
+    width: 14.4%;
+    font-size: 0.75em;
+    line-height: 20px;
+  }
+
+  main div.borda div.label-detalhes textarea.p60 {
+    width: 85.6%;
+  }
+
+  main div.borda div.label-segredo label.p40 {
+    width: 14.4%;
+  }
+
+  main div.borda div.label-segredo input[type=text].p60 {
+    width: 85.6%;
+  }
+
+  main div.borda div.label-lesao label {
+    padding-top: 10px;
+    height: 70px;
+  }
+
+  main div.borda div.label-lesao label.p40 {
+    width: 30%;
+  }
+
+  main div.borda div.label-lesao label > span {
+    display: inline;
+  }
+
+  main div.borda div.label-lesao textarea.p60 {
+    height: 70px;
+    width: 70%;
+  }
+
+  main div.borda div.label-vontade {
+    width: 50%;
+  }
+
+  main div.borda div.label-vontade label.p40 {
+    width: 30%;
+  }
+
+  main div.borda div.label-vontade label.p40-coluna2 {
+    width: 32%;
+    border-left: 2px solid rgb(43,12,16);
+  }
+
+  main div.borda div.label-vontade label.p40 > img {
+    height: 80%;
+    padding-top: 10%;
+    margin-right: -10px;
+  }
+
+  main div.borda div.label-vontade label.vontade > span.menor {
+    font-size: 0.6em;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  main div.borda div.label-vontade label.protecao > div.checkbox {
+    height: 35px;
+    width: 35px;
+    background-size: 40px;
+  }
+
+  main div.borda div.label-vontade label.protecao > div.checkbox[checked=true]::after {
+    height: 20px;
+    width: 20px;
+  }
+
+  main div.borda div.p50 {
+    width: 25%;
+  }
+
+  main div.borda div.label label.p70 {
+    width: 49.5%;
+  }
+
+  main div.borda div.label input[type=text].p30 {
+    width: 50.5%;
+  }
+
+  main div.borda div.label label.p50 {
+    width: 48%;
+    margin-left: 2%;
+  }
+
+  main div.borda div.label input[type=text].p50 {
+    width: 50%;
+  }
+
+  main div.borda h1 {
+    width: 100%;
+    padding-left: 10px;
+    font-size: 2.4em;
+    line-height: 40px;
+  }
+
+  main div.borda h1.icone {
+    width: 77%;
+  }
+
+  main div.borda div.label-ouro label.p40 {
+    width: 20%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  main div.borda div.label-jogador {
+    margin-top: 10px;
+  }
+
+  main div.borda div.label-personagem {
+    margin-top: 10px;
+  }
+
+  main div.borda div.label-vontade label.p40 {
+    width: 36%;
+  }
+
+  main div.borda div.label-vontade label.p40-coluna2 {
+    width: 36%;
+  }
+
+  main div.borda div.label-vontade label.p40 > img {
+    height: 100%;
+    padding-top: 0;
+  }
+
+  main div.borda div.label-vontade label.p40-coluna2 > img {
+    margin-right: -50px;
+  }
+
+  main div.borda div.label-vontade label.vontade > span.menor {
+    font-size: 0.8em;
+    line-height: 20px;
+  }
+
+  main div.borda div.label-detalhes label.p40 {
+    font-size: 0.9em;
+    line-height: 24px;
+  }
+
+  main div.borda div.label-lesao label.p40 {
+    width: 22%;
+  }
+
+  main div.borda div.label-lesao textarea.p60 {
+    width: 78%;
+  }
+
+  main div.borda div.campos {
+    width: 50%;
+  }
+
+  main div.borda div.verbetes > label {
+    line-height: 20px;
+    font-size: 0.8em;
+  }
+
+  main div.borda div.verbetes > span.rosa {
+    line-height: 20px;
+    font-size: 0.8em;
+  }
+
+  main div.borda div.menor1 > label {
+    font-size: 0.7em;
+  }
+
+  main div.borda div.menor1 > span {
+    font-size: 0.7em;
+  }
+
+  main div.borda h1.icone {
+    width: 81%;
+  }
+
+  main div.borda div.label-ouro label.p40 {
+    width: 14%;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  main {
+    font-size: 1.3em;
+  }
+
+  main div.borda div.logo-ficha {
+    margin-top: 0;
+  }
+
+  main div.borda div.logo-ficha img {
+    height: 160px;
+  }
+
+  main div.borda div.label-jogador {
+    margin-top: 10px;
+  }
+
+  main div.borda div.label-personagem {
+    margin-top: 10px;
+  }
+
+  main div.borda div.label-vontade label.protecao > div.checkbox {
+    height: 45px;
+    width: 45px;
+    background-size: 50px;
+  }
+
+  main div.borda div.label-vontade label.protecao > div.checkbox[checked=true]::after {
+    height: 30px;
+    width: 30px;
+  }
+
+  main div.borda h1.icone {
+    width: 85%;
+  }
+
+  main div.borda div.label-ouro label.p40 {
+    width: 14%;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  main div.borda div.label-vontade label.vontade > span.menor {
+    font-size: 1em;
+    line-height: 20px;
+  }
+
+  main div.borda div.campos {
+    width: 33.33%;
+  }
+
+  main div.borda div.campos {
+    width: 33.33%;
+  }
+
+  main div.borda div.verbetes > label {
+    line-height: 20px;
+    font-size: 0.8em;
+  }
+
+  main div.borda div.verbetes > span.rosa {
+    line-height: 20px;
+    font-size: 0.8em;
+  }
+
+  main div.borda div.menor1 > label {
+    font-size: 0.6em;
+  }
+
+  main div.borda div.menor1 > span {
+    font-size: 0.7em;
+  }
+
+  main div.borda div.menor2 > label {
+    font-size: 0.65em;
+  }
+
+  main div.borda div.menor2 > span {
+    font-size: 0.7em;
+  }
+
+  main div.borda h1.icone {
+    width: 87%;
+  }
+}
+
+@media print {
+  header {
+    display: none !important;
+  }
+  div.opcoes {
+    display: none !important;
+  }
+  div.formularios {
+    display: none !important;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact !important;
+    color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <title>Dark Evo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/vanilla-toast.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.png">
+
+    <meta property="og:title" content="Dark Evo"/>
+    <meta property="og:image" content="img/og-image.jpg"/>
+    <meta property="og:description" content="Gerador oficial de personagens de Dark Evo"/>
+    <meta property="og:url" content="https://flechamagica.com.br/darkevo"/>
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="627" />
+    <meta property="og:type" content="website"/>
+  </head>
+  <body>
+    <div id="loading">
+      <img class="loading" src="img/loading.gif">
+    </div>
+    <form id="invisible_form" action="https://flechamagica.com.br/rolador-darkevo/pdf.roller" method="post" target="_blank">
+    </form>
+
+    <header>
+      <a class="logo" href="index.html"><img src="img/logo.png" /></a>
+    </header>
+
+    <div id="opcoes" class="opcoes-site">
+      <div class="cartao" id="opcoes_criar_personagem">
+        <h2>Criar Personagem</h2>
+        <img src="img/icone_criar_personagem.png">
+      </div>
+
+      <div class="cartao" id="opcoes_rolar_personagem">
+        <h2>Rolar Personagem</h2>
+        <img class="menor" src="img/icone_rolar_personagem.png">
+      </div>
+
+      <div class="cartao" id="opcoes_branco_personagem">
+        <h2>Ficha em Branco</h2>
+        <img class="menor" src="img/icone_ficha_em_branco.png">
+      </div>
+
+      <div class="cartao"  id="opcoes_rolar_itens">
+        <h2>Rolagem de Itens</h2>
+        <img class="menor" src="img/icone_rolar_itens.png">
+      </div>
+    </div>
+
+    <div id="formulario" class="formularios">
+      <h2>Criar Personagem</h2>
+      <span class="texto">
+        Este é o criador de personagens do RPG Dark Evo! As regras completas de criação de personagens podem ser encontradas no livro PDF que pode ser baixado gratuitamente no site <a href="https://flechamagica.com/darkevo">flechamagica.com/darkevo</a>. Esta criação baseia-se em suas escolhas nos <strong>5 passos</strong> descritos no livro. Caso você queira gerar seus personagens automaticamente (rolados aqui pelo site), volte à <a href="index.html">página inicial</a> e entre na opção <strong>Rolar Personagem</strong>.
+      </span>
+      <br>
+      <div class="centralizar">
+        <label>
+          <span class="campo campo-vermelho">PASSO 1 - </span>
+          <span class="campo">Selecione a Guilda:</span>
+          <select id="criar_personagem_guilda">
+          </select>
+        </label>
+        <div class="box" id="criar_personagem_texto_guilda">Selecione a Guilda para visualizar seus detalhes.</div>
+        <label>
+          <span class="campo campo-vermelho">PASSO 2 - </span>
+          <span class="campo">Escolher 3 Verbetes:</span>
+          <br>
+          <select id="criar_personagem_verbete1"></select>
+          <br>
+          <select id="criar_personagem_verbete2"></select>
+          <br>
+          <select class="espaco" id="criar_personagem_verbete3"></select>
+        </label>
+        <label>
+          <span class="campo campo-vermelho">PASSO 3 - </span>
+          <span class="campo">Escolher Magias:</span>
+        </label>
+        <div class="box box-espaco-menor" id="criar_personagem_restricao_magias">Apenas para Salvagentes e Literatos</div>
+        <label>
+          <select id="criar_personagem_magia1"></select>
+          <br>
+          <select id="criar_personagem_magia2"></select>
+          <br>
+          <select class="espaco" id="criar_personagem_magia3"></select>
+        </label>
+        <label>
+          <span class="campo campo-vermelho">PASSO 4 - </span>
+          <span class="campo">Escolher Kit de Equipamentos:</span>
+        </label>
+        <div class="box" id="criar_personagem_kit1"><span class="bold">Kit de Equipamentos 1:</span> Selecione a Guilda</div>
+        <div class="box" id="criar_personagem_kit2"><span class="bold">Kit de Equipamentos 2:</span> Selecione a Guilda</div>
+        <label>
+          <span class="campo campo-vermelho">PASSO 5 - </span>
+          <span class="campo">Definir o Nome, o Segredo e a Divindade:</span>
+          <br>
+          <span class="campo parcial">Nome:</span>
+          <input id="criar_personagem_nome" type="text" value="">
+          <br>
+          <span class="campo parcial">Segredo:</span>
+          <input id="criar_personagem_segredo" type="text" value="">
+        </label>
+        <div class="box box-espaco-menor">A Divindade é opcional, exceto para os Salvagentes</div>
+        <label>
+          <select id="criar_personagem_divindade"></select>
+        </label>
+      </div>
+
+      <br>
+      <button class="left" id="criar_personagem_button_voltar">
+        <img src="img/bt_retorno.png" alt="Voltar">
+        <span>Voltar</span>
+      </button>
+      <button id="criar_personagem_button_gerar">
+        <img src="img/bt_ficha.png" alt="Gerar Personagem">
+        <span>Gerar</span>
+      </button>
+      <button id="criar_personagem_button_pdf">
+        <img src="img/bt_pdf.png" alt="Exportar PDF">
+        <span>Exportar</span>
+      </button>
+      <!--
+      <button id="criar_personagem_button_salvar">
+        <img src="img/bt_save.png" alt="Salvar">
+        <span>Salvar</span>
+      </button>
+      -->
+    </div>
+
+    <div id="formulario_aleatorio" class="formularios">
+      <h2>Rolar Personagem</h2>
+      <span class="texto">
+        Este é o criador de personagens do RPG Dark Evo! As regras completas de criação de personagens podem ser encontradas no livro PDF que pode ser baixado gratuitamente no site <a href="https://flechamagica.com/darkevo">flechamagica.com/darkevo</a>. Esta geração automática faz as escolhas de criação de personagem de forma aleatória. Caso você queira gerar seus personagens escolhendo os cinco passos de criação, volte à <a href="index.html">página inicial</a> e entre na opção <strong>Criar Personagem</strong>.
+      </span>
+
+      <br>
+      <button class="left" id="rolar_personagem_button_voltar">
+        <img src="img/bt_retorno.png" alt="Voltar">
+        <span>Voltar</span>
+      </button>
+      <button id="rolar_personagem_button_rolar">
+        <img src="img/bt_dado.png" alt="Rolar Personagem">
+        <span>Rolar</span>
+      </button>
+      <button id="rolar_personagem_button_pdf">
+        <img src="img/bt_pdf.png" alt="Exportar PDF">
+        <span>Exportar</span>
+      </button>
+    </div>
+
+    <div id="formulario_branco" class="formularios">
+      <h2>Ficha em Branco</h2>
+      <span class="texto">
+        Este é o criador de personagens do RPG Dark Evo! As regras completas de criação de personagens podem ser encontradas no livro PDF que pode ser baixado gratuitamente no site <a href="https://flechamagica.com/darkevo">flechamagica.com/darkevo</a>. Esta opção de ficha em branco esta disponível para a criação manual do personagem com base no livro. Caso você queira gerar seus personagens escolhendo os cinco passos de criação, ou gerando de forma aleatória, volte à <a href="index.html">página inicial</a> e entre nas opções <strong>Criar Personagem</strong> ou <strong>Rolar Personagem</strong>, respectivamente.
+      </span>
+
+      <br>
+      <button class="left" id="branco_personagem_button_voltar">
+        <img src="img/bt_retorno.png" alt="Voltar">
+        <span>Voltar</span>
+      </button>
+      <button id="branco_personagem_button_pdf">
+        <img src="img/bt_pdf.png" alt="Exportar PDF">
+        <span>Exportar</span>
+      </button>
+    </div>
+
+    <div id="formulario_itens" class="formularios">
+      <h2>Rolagem de Itens</h2>
+      <span class="texto">
+        Este é o rolador de itens do RPG Dark Evo! As relação completa de itens e armas pode ser encontrada no livro PDF que pode ser baixado gratuitamente no site <a href="https://flechamagica.com/darkevo">flechamagica.com/darkevo</a>.
+      </span>
+      <br>
+      <div class="centralizar">
+        <label>
+          <span class="campo">Selecione o tipo de Looting:</span>
+          <br>
+          <select id="rolar_itens_tipo">
+          </select>
+        </label>
+      </div>
+      <br>
+      <button class="left" id="rolar_itens_button_voltar">
+        <img src="img/bt_retorno.png" alt="Voltar">
+        <span>Voltar</span>
+      </button>
+      <button id="rolar_itens_button_rolar">
+        <img src="img/bt_dado.png" alt="Rolar Itens">
+        <span>Rolar</span>
+      </button>
+      <button id="rolar_itens_button_copiar">
+        <img src="img/bt_copy.png" alt="Rolar Itens">
+        <span>Copiar</span>
+      </button>
+    </div>
+
+    <main id="itens">
+      <div class="borda">
+        <!--
+        <div class="label"><span class="strong">Teste</span> com itens, <span class="ouro">20 moedas</span></div>
+        <div class="label"><strong>Teste</strong> com itens</div>
+        -->
+      </div>
+    </main>
+
+    <main id="ficha">
+      <div class="borda">
+        <div class="logo-ficha">
+          <img src="img/logo.png">
+        </div>
+
+        <div class="label label-jogador">
+          <label class="p40">Jogador</label>
+          <input id="ficha_jogador" type="text" class="p60" value="">
+        </div>
+
+        <div class="label label-personagem">
+          <label class="p40">Personagem</label>
+          <input id="ficha_personagem" type="text" class="p60" value="">
+        </div>
+
+        <div class="label label-guilda">
+          <label class="p40">Guilda</label>
+          <select id="ficha_guilda" class="p60">
+          </select>
+        </div>
+
+        <div class="label p50">
+          <label class="p70">Nível</label>
+          <input id="ficha_nivel" type="text" class="p30 center" value="">
+        </div>
+        <div class="label p50">
+          <label class="p50">XP</label>
+          <input id="ficha_pontos" type="text" class="p50 center" value="">
+        </div>
+
+        <div class="label label-detalhes">
+          <label class="p40">Detalhes<br>da Guilda</label>
+          <textarea id="ficha_detalhes" class="p60"></textarea>
+        </div>
+
+        <div class="label label-segredo">
+          <label class="p40">Segredo</label>
+          <input id="ficha_segredo" type="text" class="p60" value="">
+        </div>
+
+        <div class="label label-lesao">
+          <label class="p40">
+            <span>Lesão</span>
+            <input id="ficha_lesao" type="text" value="">
+          </label>
+          <textarea id="ficha_lesao_detalhes" class="p60"></textarea>
+        </div>
+
+        <div class="label label-vontade">
+          <label class="p40">
+            <img src="img/c4.png">
+          </label>
+          <label class="vontade">
+            <span class="menor">Vont. Máxima</span>
+            <input id="ficha_vontade_maxima" type="text" value="">
+          </label>
+          <label class="vontade">
+            <span>Vontade</span>
+            <input id="ficha_vontade" type="text" value="">
+          </label>
+        </div>
+
+        <div class="label label-vontade">
+          <label class="p40 p40-coluna2">
+            <img src="img/c2.png">
+          </label>
+          <label class="protecao">
+            <span>Proteção</span>
+            <div class="checkbox" id="ficha_protecao_1" checked="false"></div>
+            <div class="checkbox" id="ficha_protecao_2" checked="false"></div>
+            <div class="checkbox" id="ficha_protecao_3" checked="false"></div>
+            <div class="checkbox" id="ficha_protecao_4" checked="false"></div>
+          </label>
+        </div>
+
+        <h1>Condutas</h1>
+
+        <div class="campos">
+          <div class="checkbox" id="ficha_condutas_forte_1" checked="false"></div>
+          <div class="checkbox" id="ficha_condutas_forte_2" checked="false"></div>
+          <label>Forte</label><span class="rosa">(FR)</span>
+        </div>
+
+        <div class="campos">
+          <div class="checkbox" id="ficha_condutas_agil_1" checked="false"></div>
+          <div class="checkbox" id="ficha_condutas_agil_2" checked="false"></div>
+          <label>Ágil</label><span class="rosa">(AG)</span>
+        </div>
+
+        <div class="campos">
+          <div class="checkbox" id="ficha_condutas_criativa_1" checked="false"></div>
+          <div class="checkbox" id="ficha_condutas_criativa_2" checked="false"></div>
+          <label>Criativa</label><span class="rosa">(CR)</span>
+        </div>
+
+        <div class="campos">
+          <div class="checkbox" id="ficha_condutas_carismatica_1" checked="false"></div>
+          <div class="checkbox" id="ficha_condutas_carismatica_2" checked="false"></div>
+          <label>Carismática</label><span class="rosa">(CA)</span>
+        </div>
+
+        <div class="campos">
+          <div class="checkbox" id="ficha_condutas_inteligente_1" checked="false"></div>
+          <div class="checkbox" id="ficha_condutas_inteligente_2" checked="false"></div>
+          <label>Inteligente</label><span class="rosa">(IN)</span>
+        </div>
+
+        <div class="campos">
+          <div class="checkbox" id="ficha_condutas_mistica_1" checked="false"></div>
+          <div class="checkbox" id="ficha_condutas_mistica_2" checked="false"></div>
+          <label>Mística</label><span class="rosa">(MI)</span>
+        </div>
+
+        <h1>Verbetes</h1>
+
+        <!--
+        <div class="campos verbetes">
+          <div class="checkbox" id="ficha_verbetes_abrir_fechaduras_1" checked="false"></div>
+          <div class="checkbox" id="ficha_verbetes_abrir_fechaduras_2" checked="false"></div>
+          <label>Abrir Fechaduras</label><span class="rosa">(IN)</span>
+        </div>
+
+        <div class="campos verbetes menor1">
+          <div class="checkbox" id="ficha_verbetes_atacar_corpo_a_corpo_1" checked="false"></div>
+          <div class="checkbox" id="ficha_verbetes_atacar_corpo_a_corpo_2" checked="false"></div>
+          <label>Atacar Corpo-a-Corpo</label><span class="rosa">(FR)</span>
+        </div>
+        -->
+
+        <div class="campos verbetes"><div class="checkbox" id="ficha_verbetes_abrir_fechaduras_1" checked="false"></div><div class="checkbox" id="ficha_verbetes_abrir_fechaduras_2" checked="false"></div><label>Abrir Fechaduras</label><span class="rosa">(IN)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_verbetes_atacar_corpo_a_corpo_1" checked="false"></div><div class="checkbox" id="ficha_verbetes_atacar_corpo_a_corpo_2" checked="false"></div><label>Atacar Corpo-a-Corpo</label><span class="rosa">(FR)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_verbetes_atacar_desarmado_1" checked="false"></div><div class="checkbox" id="ficha_verbetes_atacar_desarmado_2" checked="false"></div><label>Atacar Desarmado</label><span class="rosa">(FR)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_verbetes_atacar_a_distancia_1" checked="false"></div><div class="checkbox" id="ficha_verbetes_atacar_a_distancia_2" checked="false"></div><label>Atacar à Distância</label><span class="rosa">(AG)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_verbetes_barganhar_1" checked="false"></div><div class="checkbox" id="ficha_verbetes_barganhar_2" checked="false"></div><label>Barganhar</label><span class="rosa">(CA)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_verbetes_cavalgar_1" checked="false"></div><div class="checkbox" id="ficha_verbetes_cavalgar_2" checked="false"></div><label>Cavalgar</label><span class="rosa">(AG)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_verbetes_cacar_1" checked="false"></div><div class="checkbox" id="ficha_verbetes_cacar_2" checked="false"></div><label>Caçar</label><span class="rosa">(IN)</span></div>
+        <div class="campos verbetes menor1"><div class="checkbox" id="ficha_verbetes_confeccionar_armaduras_leves_1" checked="false"></div><div class="checkbox" id="ficha_verbetes_confeccionar_armaduras_leves_2" checked="false"></div><label>Confeccionar Armaduras Leves</label><span class="rosa">(IN)</span></div>
+        <div class="campos verbetes menor1"><div class="checkbox" id="ficha_verbetes_confeccionar_armas_de_madeira_1" checked="false"></div><div class="checkbox" id="ficha_verbetes_confeccionar_armas_de_madeira_2" checked="false"></div><label>Confeccionar Armas de Madeira</label><span class="rosa">(IN)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_verbetes_conhecer_idiomas_1" checked="false"></div><div class="checkbox" id="ficha_verbetes_conhecer_idiomas_2" checked="false"></div><label>Conhecer Idiomas</label><span class="rosa">(IN)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_verbetes_cozinhar_1" checked="false"></div><div class="checkbox" id="ficha_verbetes_cozinhar_2" checked="false"></div><label>Cozinhar</label><span class="rosa">(CR)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_verbetes_curar_ferimentos_1" checked="false"></div><div class="checkbox" id="ficha_verbetes_curar_ferimentos_2" checked="false"></div><label>Curar Ferimentos</label><span class="rosa">(MI)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_verbetes_enganar_1" checked="false"></div><div class="checkbox" id="ficha_verbetes_enganar_2" checked="false"></div><label>Enganar</label><span class="rosa">(CA)</span></div>
+        <div class="campos verbetes menor1"><div class="checkbox" id="ficha_verbetes_entreter_1" checked="false"></div><div class="checkbox" id="ficha_verbetes_entreter_2" checked="false"></div><label>Entreter (Cantar, Dançar, Tocar)</label><span class="rosa">(CR)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_verbetes_equilibrar_1" checked="false"></div><div class="checkbox" id="ficha_verbetes_equilibrar_2" checked="false"></div><label>Equilibrar</label><span class="rosa">(AG)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_verbetes_escalar_1" checked="false"></div><div class="checkbox" id="ficha_verbetes_escalar_2" checked="false"></div><label>Escalar</label><span class="rosa">(FR)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_verbetes_esconder_nas_sombras_1" checked="false"></div><div class="checkbox" id="ficha_verbetes_esconder_nas_sombras_2" checked="false"></div><label>Esconder nas Sombras</label><span class="rosa">(AG)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_verbetes_esquivar_e_desengajar_1" checked="false"></div><div class="checkbox" id="ficha_verbetes_esquivar_e_desengajar_2" checked="false"></div><label>Esquivar e Desengajar</label><span class="rosa">(AG)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_verbetes_falsificar_1" checked="false"></div><div class="checkbox" id="ficha_verbetes_falsificar_2" checked="false"></div><label>Falsificar</label><span class="rosa">(IN)</span></div>
+        <div class="campos verbetes menor2"><div class="checkbox" id="ficha_verbetes_forjar_armaduras_pesadas_1" checked="false"></div><div class="checkbox" id="ficha_verbetes_forjar_armaduras_pesadas_2" checked="false"></div><label>Forjar Armaduras Pesadas</label><span class="rosa">(FR)</span></div>
+        <div class="campos verbetes menor2"><div class="checkbox" id="ficha_verbetes_forjar_armas_corpo_a_corpo_1" checked="false"></div><div class="checkbox" id="ficha_verbetes_forjar_armas_corpo_a_corpo_2" checked="false"></div><label>Forjar Armas Corpo-a-Corpo</label><span class="rosa">(FR)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_verbetes_forragear_1" checked="false"></div><div class="checkbox" id="ficha_verbetes_forragear_2" checked="false"></div><label>Forragear</label><span class="rosa">(IN)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_verbetes_furtar_1" checked="false"></div><div class="checkbox" id="ficha_verbetes_furtar_2" checked="false"></div><label>Furtar</label><span class="rosa">(CR)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_verbetes_historiar_1" checked="false"></div><div class="checkbox" id="ficha_verbetes_historiar_2" checked="false"></div><label>Historiar</label><span class="rosa">(IN)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_verbetes_intimidar_1" checked="false"></div><div class="checkbox" id="ficha_verbetes_intimidar_2" checked="false"></div><label>Intimidar</label><span class="rosa">(CA)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_verbetes_investigar_pistas_1" checked="false"></div><div class="checkbox" id="ficha_verbetes_investigar_pistas_2" checked="false"></div><label>Investigar Pistas</label><span class="rosa">(IN)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_verbetes_ler_e_escrever_1" checked="false"></div><div class="checkbox" id="ficha_verbetes_ler_e_escrever_2" checked="false"></div><label>Ler e Escrever</label><span class="rosa">(IN)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_verbetes_liderar_1" checked="false"></div><div class="checkbox" id="ficha_verbetes_liderar_2" checked="false"></div><label>Liderar</label><span class="rosa">(CA)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_verbetes_mover_silenciosamente_1" checked="false"></div><div class="checkbox" id="ficha_verbetes_mover_silenciosamente_2" checked="false"></div><label>Mover Silenciosamente</label><span class="rosa">(AG)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_verbetes_nadar_1" checked="false"></div><div class="checkbox" id="ficha_verbetes_nadar_2" checked="false"></div><label>Nadar</label><span class="rosa">(FR)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_verbetes_navegar_barcos_e_navios_1" checked="false"></div><div class="checkbox" id="ficha_verbetes_navegar_barcos_e_navios_2" checked="false"></div><label>Navegar Barcos e Navios</label><span class="rosa">(IN)</span></div>
+        <div class="campos verbetes menor2"><div class="checkbox" id="ficha_verbetes_perceber_ambiente_ao_redor_1" checked="false"></div><div class="checkbox" id="ficha_verbetes_perceber_ambiente_ao_redor_2" checked="false"></div><label>Perceber Ambiente ao Redor</label><span class="rosa">(CR)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_verbetes_persuadir_1" checked="false"></div><div class="checkbox" id="ficha_verbetes_persuadir_2" checked="false"></div><label>Persuadir</label><span class="rosa">(CA)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_verbetes_praticar_alquimia_1" checked="false"></div><div class="checkbox" id="ficha_verbetes_praticar_alquimia_2" checked="false"></div><label>Praticar Alquimia</label><span class="rosa">(MI)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_verbetes_rastrear_1" checked="false"></div><div class="checkbox" id="ficha_verbetes_rastrear_2" checked="false"></div><label>Rastrear</label><span class="rosa">(CR)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_verbetes_reparar_objetos_1" checked="false"></div><div class="checkbox" id="ficha_verbetes_reparar_objetos_2" checked="false"></div><label>Reparar Objetos</label><span class="rosa">(IN)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_verbetes_sobreviver_nos_ermos_1" checked="false"></div><div class="checkbox" id="ficha_verbetes_sobreviver_nos_ermos_2" checked="false"></div><label>Sobreviver nos Ermos</label><span class="rosa">(CR)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_verbetes_treinar_animais_1" checked="false"></div><div class="checkbox" id="ficha_verbetes_treinar_animais_2" checked="false"></div><label>Treinar Animais</label><span class="rosa">(CA)</span></div>
+
+        <br style="clear: both">
+        <img class="icone" src="img/c3.png">
+        <h1 class="icone">Inventário</h1>
+
+        <div class="label label-ouro">
+          <label class="p40">Ouro</label>
+          <input id="ficha_ouro" type="text" class="p60" value="">
+        </div>
+
+        <br>
+
+        <div class="label itens-colunas itens-colunas-borda coluna1">
+          <label>Item</label>
+        </div>
+        <div class="label itens-colunas itens-colunas-borda coluna2">
+          <label>Detalhes</label>
+        </div>
+        <div class="label itens-colunas itens-colunas-borda coluna3">
+          <label>Qtde</label>
+        </div>
+
+        <div class="label itens-colunas coluna1">
+          <input id="ficha_inventario_item_1" type="text" value="">
+        </div>
+        <div class="label itens-colunas coluna2">
+          <input id="ficha_inventario_detalhes_1" type="text" value="">
+        </div>
+        <div class="label itens-colunas coluna3">
+          <input id="ficha_inventario_qtde_1" type="number" value="">
+        </div>
+
+        <div class="label itens-colunas coluna1">
+          <input id="ficha_inventario_item_2" type="text" value="">
+        </div>
+        <div class="label itens-colunas coluna2">
+          <input id="ficha_inventario_detalhes_2" type="text" value="">
+        </div>
+        <div class="label itens-colunas coluna3">
+          <input id="ficha_inventario_qtde_2" type="number" value="">
+        </div>
+
+        <div class="label itens-colunas coluna1">
+          <input id="ficha_inventario_item_3" type="text" value="">
+        </div>
+        <div class="label itens-colunas coluna2">
+          <input id="ficha_inventario_detalhes_3" type="text" value="">
+        </div>
+        <div class="label itens-colunas coluna3">
+          <input id="ficha_inventario_qtde_3" type="number" value="">
+        </div>
+
+        <div class="label itens-colunas coluna1">
+          <input id="ficha_inventario_item_4" type="text" value="">
+        </div>
+        <div class="label itens-colunas coluna2">
+          <input id="ficha_inventario_detalhes_4" type="text" value="">
+        </div>
+        <div class="label itens-colunas coluna3">
+          <input id="ficha_inventario_qtde_4" type="number" value="">
+        </div>
+
+        <div class="label itens-colunas coluna1">
+          <input id="ficha_inventario_item_5" type="text" value="">
+        </div>
+        <div class="label itens-colunas coluna2">
+          <input id="ficha_inventario_detalhes_5" type="text" value="">
+        </div>
+        <div class="label itens-colunas coluna3">
+          <input id="ficha_inventario_qtde_5" type="number" value="">
+        </div>
+
+        <div class="label itens-colunas coluna1">
+          <input id="ficha_inventario_item_6" type="text" value="">
+        </div>
+        <div class="label itens-colunas coluna2">
+          <input id="ficha_inventario_detalhes_6" type="text" value="">
+        </div>
+        <div class="label itens-colunas coluna3">
+          <input id="ficha_inventario_qtde_6" type="number" value="">
+        </div>
+
+        <div class="label itens-colunas coluna1">
+          <input id="ficha_inventario_item_7" type="text" value="">
+        </div>
+        <div class="label itens-colunas coluna2">
+          <input id="ficha_inventario_detalhes_7" type="text" value="">
+        </div>
+        <div class="label itens-colunas coluna3">
+          <input id="ficha_inventario_qtde_7" type="number" value="">
+        </div>
+
+        <div class="label itens-colunas coluna1">
+          <input id="ficha_inventario_item_8" type="text" value="">
+        </div>
+        <div class="label itens-colunas coluna2">
+          <input id="ficha_inventario_detalhes_8" type="text" value="">
+        </div>
+        <div class="label itens-colunas coluna3">
+          <input id="ficha_inventario_qtde_8" type="number" value="">
+        </div>
+
+        <div class="label itens-colunas coluna1">
+          <input id="ficha_inventario_item_9" type="text" value="">
+        </div>
+        <div class="label itens-colunas coluna2">
+          <input id="ficha_inventario_detalhes_9" type="text" value="">
+        </div>
+        <div class="label itens-colunas coluna3">
+          <input id="ficha_inventario_qtde_9" type="number" value="">
+        </div>
+
+        <br style="clear: both">
+        <img class="icone" src="img/c1.png">
+        <h1 class="icone espaco">Magias</h1>
+        <br>
+
+        <div class="campos verbetes"><div class="checkbox" id="ficha_magias_curatio_1" checked="false"></div><div class="checkbox" id="ficha_magias_curatio_2" checked="false"></div><div class="checkbox" id="ficha_magias_curatio_3" checked="false"></div><label>Curatio</label><span class="rosa rosa-menor">(Cura)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_magias_daemonium_1" checked="false"></div><div class="checkbox" id="ficha_magias_daemonium_2" checked="false"></div><div class="checkbox" id="ficha_magias_daemonium_3" checked="false"></div><label>Daemonium</label><span class="rosa rosa-menor">(Demônio)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_magias_fortitudo_1" checked="false"></div><div class="checkbox" id="ficha_magias_fortitudo_2" checked="false"></div><div class="checkbox" id="ficha_magias_fortitudo_3" checked="false"></div><label>Fortitudo</label><span class="rosa rosa-menor">(Fortitude)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_magias_glacies_1" checked="false"></div><div class="checkbox" id="ficha_magias_glacies_2" checked="false"></div><div class="checkbox" id="ficha_magias_glacies_3" checked="false"></div><label>Glacies</label><span class="rosa rosa-menor">(Gelo)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_magias_ignis_1" checked="false"></div><div class="checkbox" id="ficha_magias_ignis_2" checked="false"></div><div class="checkbox" id="ficha_magias_ignis_3" checked="false"></div><label>Ignis</label><span class="rosa rosa-menor">(Fogo)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_magias_incantare_1" checked="false"></div><div class="checkbox" id="ficha_magias_incantare_2" checked="false"></div><div class="checkbox" id="ficha_magias_incantare_3" checked="false"></div><label>Incantare</label><span class="rosa rosa-menor">(Encantar)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_magias_invocare_1" checked="false"></div><div class="checkbox" id="ficha_magias_invocare_2" checked="false"></div><div class="checkbox" id="ficha_magias_invocare_3" checked="false"></div><label>Invocare</label><span class="rosa rosa-menor">(Invocar)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_magias_lux_1" checked="false"></div><div class="checkbox" id="ficha_magias_lux_2" checked="false"></div><div class="checkbox" id="ficha_magias_lux_3" checked="false"></div><label>Lux</label><span class="rosa rosa-menor">(Luz)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_magias_mortus_1" checked="false"></div><div class="checkbox" id="ficha_magias_mortus_2" checked="false"></div><div class="checkbox" id="ficha_magias_mortus_3" checked="false"></div><label>Mortus</label><span class="rosa rosa-menor">(Necromancia)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_magias_praesidium_1" checked="false"></div><div class="checkbox" id="ficha_magias_praesidium_2" checked="false"></div><div class="checkbox" id="ficha_magias_praesidium_3" checked="false"></div><label>Praesidium</label><span class="rosa rosa-menor">(Proteção)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_magias_puritas_1" checked="false"></div><div class="checkbox" id="ficha_magias_puritas_2" checked="false"></div><div class="checkbox" id="ficha_magias_puritas_3" checked="false"></div><label>Puritas</label><span class="rosa rosa-menor">(Pureza)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_magias_sanguis_1" checked="false"></div><div class="checkbox" id="ficha_magias_sanguis_2" checked="false"></div><div class="checkbox" id="ficha_magias_sanguis_3" checked="false"></div><label>Sanguis</label><span class="rosa rosa-menor">(Sangue)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_magias_saxum_1" checked="false"></div><div class="checkbox" id="ficha_magias_saxum_2" checked="false"></div><div class="checkbox" id="ficha_magias_saxum_3" checked="false"></div><label>Saxum</label><span class="rosa rosa-menor">(Pedra)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_magias_somnum_1" checked="false"></div><div class="checkbox" id="ficha_magias_somnum_2" checked="false"></div><div class="checkbox" id="ficha_magias_somnum_3" checked="false"></div><label>Somnum</label><span class="rosa rosa-menor">(Dormir)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_magias_tempus_1" checked="false"></div><div class="checkbox" id="ficha_magias_tempus_2" checked="false"></div><div class="checkbox" id="ficha_magias_tempus_3" checked="false"></div><label>Tempus</label><span class="rosa rosa-menor">(Tempo)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_magias_umbra_1" checked="false"></div><div class="checkbox" id="ficha_magias_umbra_2" checked="false"></div><div class="checkbox" id="ficha_magias_umbra_3" checked="false"></div><label>Umbra</label><span class="rosa rosa-menor">(Sombra)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_magias_venenum_1" checked="false"></div><div class="checkbox" id="ficha_magias_venenum_2" checked="false"></div><div class="checkbox" id="ficha_magias_venenum_3" checked="false"></div><label>Venenum</label><span class="rosa rosa-menor">(Veneno)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_magias_ventus_1" checked="false"></div><div class="checkbox" id="ficha_magias_ventus_2" checked="false"></div><div class="checkbox" id="ficha_magias_ventus_3" checked="false"></div><label>Ventus</label><span class="rosa rosa-menor">(Vento)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_magias_veritas_1" checked="false"></div><div class="checkbox" id="ficha_magias_veritas_2" checked="false"></div><div class="checkbox" id="ficha_magias_veritas_3" checked="false"></div><label>Veritas</label><span class="rosa rosa-menor">(Verdade)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_magias_visio_1" checked="false"></div><div class="checkbox" id="ficha_magias_visio_2" checked="false"></div><div class="checkbox" id="ficha_magias_visio_3" checked="false"></div><label>Visio</label><span class="rosa rosa-menor">(Visão)</span></div>
+        <div class="campos verbetes"><div class="checkbox" id="ficha_magias_vita_1" checked="false"></div><div class="checkbox" id="ficha_magias_vita_2" checked="false"></div><div class="checkbox" id="ficha_magias_vita_3" checked="false"></div><label>Vita</label><span class="rosa rosa-menor">(Vida)</span></div>
+
+      </div>
+    </main>
+
+    <script type="text/javascript" src="js/vanilla-toast.js"></script>
+    <script type="text/javascript" src="js/dados.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>

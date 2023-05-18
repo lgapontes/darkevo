@@ -1,0 +1,131 @@
+Pelejas: especialistas em armas e combate.
+
+Possuem 1 Ponto nas Condutas Forte, Ágil e Criativa.
+Possuem 1 Ponto nos Verbetes Atacar Corpo-a-Corpo, Atacar
+Desarmado, Atacar à Distância, Cavalgar, Confeccionar Arma-
+duras Leves, Escalar, Esquivar e Desengajar, Forjar Armas
+Corpo-a-Corpo, Intimidar, Liderar, Nadar, Perceber Ambiente
+ao Redor, Reparar Objetos, além de poder escolher outros 3 Ver-
+betes de Nível 1.
+Possuem 5 Pontos de Vontade (valor da Vontade Máxima).
+Possuem proficiência em todas as Armas (Leves, Médias ou Pesa-
+das), Escudos, Armaduras (Leves e Pesadas) e Elmos.
+Possuem 10 ouros, e deve escolher um entre os 2 kits abaixo:
+
+Kit de Itens 1
+Espada Curta, Corselete Acol
+-choado, Escudo de Madeira,
+Pederneira, Queijo, Odre de
+Cerveja e Coldre de Água.
+
+Kit de Itens 2
+Bardiche, Armadilha de Urso,
+Corselete Acolchoado, Tocha,
+Carne Seca, Odre de Cerveja e
+Coldre de Água
+
+
+Mascates: furtivos e perigosos, são os ladrões mais habilidosos.
+
+Possuem 1 Ponto nas Condutas Ágil, Criativa e Carismática.
+Possuem 1 Ponto nos Verbetes Abrir Fechaduras, Atacar à Distância, Barganhar,
+Cavalgar, Conhecer Idiomas, Enganar, Entreter (Cantar, Dançar, Tocar), Equi-
+librar, Escalar, Esconder nas Sombras, Furtar, Historiar, Intimidar, Investigar
+Pistas, Ler e Escrever, Mover Silenciosamente, Nadar, Perceber Ambiente ao
+Redor, Persuadir, e pode escolher outros 3 Verbetes de Nível 1.
+Possuem 5 Pontos de Vontade (valor da Vontade Máxima).
+Possuem proficiência em Armas Leves e Médias, e Armaduras Leves.
+Escudos e Elmos os prejudicam (2 Desvantagem se usá-los).
+Possuem 10 ouros, e deve escolher um entre os 2 kits abaixo:
+
+Kit de Itens 1
+2 Punhais, Corselete de Couro,
+Flauta Doce, Coldre de Água,
+Carne Seca, Ânfora de Óleo e
+Ferramentas de Ladrão.
+
+Kit de Itens 2
+Arco Curto, 20 Flechas, Corselete
+de Couro, Corda de Cânhamo,
+Frutas, Coldre de Água e
+Ferramentas de Ladrão.
+
+
+Salvagentes: os ordeiros clérigos que buscam salvar todos.
+
+Possuem 1 Ponto nas Condutas Forte, Carismática e Mística.
+Possuem 1 Ponto nos Verbetes Atacar Corpo-a-Corpo, Cavalgar, Confeccionar Ar-
+maduras Leves, Conhecer Idiomas, Curar Ferimentos, Entreter (Cantar, Dançar,
+Tocar), Historiar, Investigar Pistas, Ler e Escrever, Nadar, Perceber Ambiente ao
+Redor, Persuadir, Reparar Objetos, além de mais 3 Verbetes de Nível 1.
+Possuem 6 Pontos de Vontade (valor da Vontade Máxima).
+Possuem proficiência em todas as Bestas (porém somente com Quadrelos), Funda,
+Aprisionador, Bastão, Cajado, Cajado-Funda, Cetro, Clava, Martelo, Maça, Martelo
+Lucerno, Martelo de Batalha, todas as Armaduras, Elmos e Escudos.
+Pode escolher 2 Magias Divinas entre Curatio, Glacies, Incantare, Lux, Puritas,
+Somnum, Tempus, Veritas e Vita. Eles devem escolher uma Divindade (vide
+Capítulo Liturânea) e precisam de um Símbolo Divino para conjurar.
+Possuem 10 ouros, e deve escolher um entre os 2 kits abaixo:
+
+Kit de Itens 1
+Maça, Corselete de Couro, Escudo de
+Madeira, Açúcar Mascavo, Peixe, Coldre
+de Água e Símbolo Divino.
+
+Kit de Itens 2
+Funda, 20 Pedras, Corselete de Couro,
+Escudo de Madeira, Ração de Viagem,
+Coldre de Água e Símbolo Divino.
+
+
+
+Corjus: sobreviventes dos ermos e excelentes arqueiros.
+
+Possuem 1 Ponto nas Condutas Ágil, Criativa e Inteligente.
+Possuem 1 Ponto nos Verbetes Atacar Desarmado, Atacar à Distância, Cavalgar,
+Caçar, Confeccionar Armas de Madeira, Cozinhar, Curar Ferimentos, Escalar,
+Esquivar e Desengajar, Forragear, Mover Silenciosamente, Nadar, Perceber
+Ambiente ao Redor, Rastrear, Sobreviver nos Ermos, Treinar Animais, além de
+poder escolher outros 3 Verbetes de Nível 1.
+Possuem 5 Pontos de Vontade (valor da Vontade Máxima).
+Possuem proficiência em Armas Leves, Armas Médias, Arco Longo e
+Arco Longo Composto, Armaduras Leves e Escudos (não usa Elmos).
+Possuem 10 ouros, e deve escolher um entre os 2 kits abaixo:
+
+Kit de Itens 1
+Arco Curto, 20 Flechas, Corselete
+de Couro, Legumes Frescos, Col-
+dre de Água, Corda de Cânhamo
+e Ferramentas de Carpintaria.
+
+Kit de Itens 2
+Zarabatana, 30 Ferpas de Madeira,
+Escudo de Madeira, Corselete de
+Couro, Frutas, Coldre de Água e
+Ferramentas de Couraria.
+
+Literatos: feiticeiros que dominam a magia arcana.
+
+Possuem 1 Ponto nas Condutas Carismática, Inteligente e Mística.
+Possuem 1 Ponto nos Verbetes Barganhar, Conhecer Idiomas, Cozinhar, Falsificar,
+Forragear, Historiar, Investigar Pistas, Ler e Escrever, Liderar, Nadar, Persuadir,
+Praticar Alquimia, Reparar Objetos, além de mais 3 Verbetes de Nível 1.
+Possuem 6 Pontos de Vontade (valor da Vontade Máxima).
+Possuem proficiência em Adaga, Faca, Funda, Punhal, Bastão, Cajado,
+Cajado-Funda, Cetro e Robe de Couro Nobre. O uso de armaduras, elmos
+ou escudos impedem a conjuração.
+Pode escolher 3 Magias Arcanas entre Daemonium, Fortitudo, Glacies, Ignis,
+Incantare, Invocare, Lux, Mortus, Praesidium, Sanguis, Saxum, Somnum,
+Tempus, Umbra, Venenum, Ventus e Visio. Deve ter uma mão livre para con-
+jurar. Deve possuir um Grimório com os detalhes místicos das magias.
+Possuem 10 ouros, e deve escolher um entre os 2 kits abaixo:
+
+Kit de Itens 1
+Funda, 30 Pedras, Tinta e Pena, Coldre
+de Água, Pão e Grimório.
+
+Kit de Itens 2
+Adaga, Tinta e Pena, Papiro, Coldre de
+Água, Carne Seca e Grimório.
+
+
