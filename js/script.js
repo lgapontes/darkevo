@@ -1203,7 +1203,12 @@ function sortearRelacaoItens(tipo,relacao_itens,callback) {
           ouro = '';
           virgula_ouro = '';
         }
-        item_sorteado['html'] = `<div class="label">${item_sorteado.icon}<span class="strong"> ${item_sorteado.nome}</span>, ${item_sorteado.detalhes}${virgula_ouro}<span class="ouro">${ouro}</span></div>`;
+
+        if (relacao_itens.key == 'Itens Genéricos') {          
+          item_sorteado['html'] = `<div class="label">${item_sorteado.icon}<span class="strong"> ${item_sorteado.nome}</span>${virgula_ouro}<span class="ouro">${ouro}</span></div>`;  
+        } else {
+          item_sorteado['html'] = `<div class="label">${item_sorteado.icon}<span class="strong"> ${item_sorteado.nome}</span>, ${item_sorteado.detalhes}${virgula_ouro}<span class="ouro">${ouro}</span></div>`;
+        }      
 
         if ('sortear' in item_sorteado) {
           if ((item_sorteado.sortear) && (tipo != 'Casa de Alquimia')) {
@@ -1256,6 +1261,8 @@ function rolarItens(callback) {
         todos_itens_sorteados.push(item_moedas);
       }
     }
+
+
 
     sortearRelacaoItens(tipo,relacao_itens,(itens_sorteados)=>{
       todos_itens_sorteados = todos_itens_sorteados.concat(itens_sorteados);

@@ -275,6 +275,59 @@ const ITENS = {
     'Veneno Natural': { detalhes: 'Veneno de Oleandro para até 3 pessoas. Se ingerido rolar 1d6 e consultar as Lesões de Envenenamentos', custo: '30', ouro: '120', icon: '🏺️' },
     'Ânfora de Ácido': { detalhes: 'Cinzas Vulcânicas oxidadas por um processo químico. Causa queimaduras em 1 alvo com Dano 3 e Lesão C', custo: '100', ouro: '300', icon: '🏺️' },
     'Ânfora de Óleo': { detalhes: 'Óleo inflamável de origem vegetal ou animal que queima por 3 turnos e causa Dano 2 e Lesão B', custo: '1', ouro: '2', icon: '🏺️' }
+  },
+  'Itens Genéricos': {
+    'Livro queimado': { detalhes: '', ouro: '< 1', icon: '📦' },
+    'Roupas rasgadas': { detalhes: '', ouro: '< 1', icon: '📦' },
+    'Rato morto': { detalhes: '', ouro: '< 1', icon: '📦' },
+    'Cacos de vidro': { detalhes: '', ouro: '< 1', icon: '📦' },
+    'Uma carta lacrada': { detalhes: '', ouro: '< 1', icon: '📦' },
+    'Um pergaminho velho': { detalhes: '', ouro: '< 1', icon: '📦' },
+    '500 gramas de lenha': { detalhes: '', ouro: '< 1', icon: '📦' },
+    'Penas de ganso': { detalhes: '', ouro: '< 1', icon: '📦' },
+    'Botas velhas': { detalhes: '', ouro: '< 1', icon: '📦' },
+    'Chifre bovino': { detalhes: '', ouro: '< 1', icon: '📦' },
+    'Uma orelha cortada': { detalhes: '', ouro: '< 1', icon: '📦' },
+    'Brincos de prata': { detalhes: '', ouro: '60', icon: '📦' },
+    'Rubi lascado': { detalhes: '', ouro: '100', icon: '📦' },
+    'Uma moeda prateada': { detalhes: '', ouro: '< 1', icon: '📦' },
+    'Manta de frio': { detalhes: '', ouro: '< 1', icon: '📦' },
+    'Gravetos secos': { detalhes: '', ouro: '< 1', icon: '📦' },
+    '100 gramas de pó dourado': { detalhes: '', ouro: '10', icon: '📦' },
+    'Fechadura de porta': { detalhes: '', ouro: '< 1', icon: '📦' },
+    'Corda de arco': { detalhes: '', ouro: '< 1', icon: '📦' },
+    'Mechas de cabelo': { detalhes: '', ouro: '< 1', icon: '📦' },
+    'Um dedo cortado': { detalhes: '', ouro: '< 1', icon: '📦' },
+    'Guarda-mão (empunhadura) de espada': { detalhes: '', ouro: '< 1', icon: '📦' },
+    'Lâmina lascada de adaga': { detalhes: '', ouro: '< 1', icon: '📦' },
+    'Uma coroa amassada': { detalhes: '', ouro: '100', icon: '📦' },
+    'Um dente de ouro': { detalhes: '', ouro: '1', icon: '📦' },
+    'Uma chave nobre': { detalhes: '', ouro: '< 1', icon: '📦' },
+    'Castiçal de bronze': { detalhes: '', ouro: '1', icon: '📦' },
+    'Um mapa rústico': { detalhes: '', ouro: '< 1', icon: '📦' },
+    'Partitura musical': { detalhes: '', ouro: '< 1', icon: '📦' },
+    'Odre com sangue': { detalhes: '', ouro: '< 1', icon: '📦' },
+    'Um fêmur': { detalhes: '', ouro: '< 1', icon: '📦' },
+    'Chapéu de couro': { detalhes: '', ouro: '< 1', icon: '📦' },
+    'Pintura de uma donzela': { detalhes: '', ouro: '3', icon: '📦' },
+    'Folhas secas de teixo': { detalhes: '', ouro: '< 1', icon: '📦' },
+    'Pedra de amolar': { detalhes: '', ouro: '1', icon: '📦' },
+    'Barra de ferro': { detalhes: '', ouro: '30', icon: '📦' },
+    'Haste de teixo de Calântia': { detalhes: '', ouro: '100', icon: '📦' },
+    '1 metro de Couro de Trolls': { detalhes: '', ouro: '200', icon: '📦' },
+    '1 metro de tecido nobre da Região das Vilas': { detalhes: '', ouro: '100', icon: '📦' },
+    '1 barra de Prata de Broanor': { detalhes: '', ouro: '200', icon: '📦' },
+    'Crânio humano': { detalhes: '', ouro: '< 1', icon: '📦' },
+    'Sementes desconhecidas': { detalhes: '', ouro: '< 1', icon: '📦' },
+    'Lenço de seda': { detalhes: '', ouro: '2', icon: '📦' },
+    'Cinzel enferrujado': { detalhes: '', ouro: '< 1', icon: '📦' },
+    'Panela de barro': { detalhes: '', ouro: '< 1', icon: '📦' },
+    'Cera vermelha para lacre': { detalhes: '', ouro: '< 1', icon: '📦' },
+    'Cordas de Alaúde': { detalhes: '', ouro: '1', icon: '📦' },
+    'Uma flauta quebrada': { detalhes: '', ouro: '< 1', icon: '📦' },
+    'Uma estrela do mar': { detalhes: '', ouro: '< 1', icon: '📦' },
+    'Asas de morcego': { detalhes: '', ouro: '< 1', icon: '📦' },
+    'Um anel de prata': { detalhes: '', ouro: '50', icon: '📦' }
   }
 };
 
@@ -327,6 +380,10 @@ const ROLAR_ITENS = {
     key: 'Poções',
     percentual: 10,
     quantidade: 1
+  },{
+    key: 'Itens Genéricos',
+    percentual: 90,
+    quantidade: 2
   }],
   'Looting Médio': [{
     key: 'Itens de Sobrevivência',
@@ -376,6 +433,10 @@ const ROLAR_ITENS = {
     key: 'Poções',
     percentual: 10,
     quantidade: 1
+  },{
+    key: 'Itens Genéricos',
+    percentual: 90,
+    quantidade: 3
   }],
   'Looting Grande': [{
     key: 'Itens de Sobrevivência',
@@ -425,6 +486,10 @@ const ROLAR_ITENS = {
     key: 'Poções',
     percentual: 40,
     quantidade: 1
+  },{
+    key: 'Itens Genéricos',
+    percentual: 90,
+    quantidade: 4
   }],
   'Forjas de Armas e Armaduras': [{
     key: 'Itens de Sobrevivência',
@@ -472,6 +537,10 @@ const ROLAR_ITENS = {
     quantidade: 2
   },{
     key: 'Poções',
+    percentual: 0,
+    quantidade: 0
+  },{
+    key: 'Itens Genéricos',
     percentual: 0,
     quantidade: 0
   }],
@@ -523,6 +592,10 @@ const ROLAR_ITENS = {
     key: 'Poções',
     percentual: 100,
     quantidade: 6
+  },{
+    key: 'Itens Genéricos',
+    percentual: 0,
+    quantidade: 0
   }],
   'Tavernas & Estalagens': [{
     key: 'Itens de Sobrevivência',
@@ -572,6 +645,10 @@ const ROLAR_ITENS = {
     key: 'Poções',
     percentual: 0,
     quantidade: 0
+  },{
+    key: 'Itens Genéricos',
+    percentual: 100,
+    quantidade: 4
   }],
   'Monastérios & Capelas': [{
     key: 'Itens de Sobrevivência',
@@ -621,6 +698,10 @@ const ROLAR_ITENS = {
     key: 'Poções',
     percentual: 50,
     quantidade: 1
+  },{
+    key: 'Itens Genéricos',
+    percentual: 50,
+    quantidade: 2
   }],
   'Carroças de Especiarias': [{
     key: 'Itens de Sobrevivência',
@@ -670,6 +751,10 @@ const ROLAR_ITENS = {
     key: 'Poções',
     percentual: 100,
     quantidade: 1
+  },{
+    key: 'Itens Genéricos',
+    percentual: 90,
+    quantidade: 3
   }],
   'Baús de Tesouros': [{
     key: 'Itens de Sobrevivência',
@@ -719,62 +804,12 @@ const ROLAR_ITENS = {
     key: 'Poções',
     percentual: 50,
     quantidade: 1
+  },{
+    key: 'Itens Genéricos',
+    percentual: 90,
+    quantidade: 3
   }]
 };
-
-const ITENS_GENERICOS = [
-  'Livro queimado',
-  'Roupas rasgadas',
-  'Rato morto',
-  'Cacos de vidro',
-  'Uma carta lacrada',
-  'Um pergaminho velho',
-  '500 gramas de lenha',
-  'Penas de ganso',
-  'Botas velhas',
-  'Chifre bovino',
-  'Uma orelha cortada',
-  'Brincos de prata',
-  'Rubi lascado',
-  'Uma moeda prateada',
-  'Manta de frio',
-  'Gravetos secos',
-  '100 gramas de pó dourado',
-  'Fechadura de porta',
-  'Corda de arco',
-  'Mechas de cabelo',
-  'Um dedo cortado',
-  'Guarda-mão (empunhadura) de espada',
-  'Lâmina lascada de adaga',
-  'Uma coroa amassada',
-  'Um dente de ouro',
-  'Uma chave nobre',
-  'Castiçal de bronze',
-  'Um mapa rústico',
-  'Partitura musical',
-  'Odre com sangue',
-  'Um fêmur',
-  'Chapéu de couro',
-  'Pintura de uma donzela',
-  'Folhas secas de teixo',
-  'Pedra de amolar',
-  'Barra de ferro',
-  'Haste de teixo de Calântia',
-  '1 metro de Couro de Trolls',
-  '1 metro de tecido nobre da Região das Vilas',
-  '1 barra de Prata de Broanor',
-  'Crânio humano',
-  'Sementes desconhecidas',
-  'Lenço de seda',
-  'Cinzel enferrujado',
-  'Panela de barro',
-  'Cera vermelha para lacre',
-  'Cordas de Alaúde',
-  'Uma flauta quebrada',
-  'Uma estrela do mar',
-  'Asas de morcego',
-  'Um anel de prata'
-];
 
 const DIVINDADES = {
   'Aquilas': { descricao: 'a Grande Águia', alinhamento: 'Neutra' },

@@ -911,6 +911,8 @@ div.formularios div.centralizar > label > select {
 
   border-radius: 0;
   box-shadow: none;
+
+  border: 1px solid black;
 }
 
 div.formularios div.centralizar > label > br + select, div.formularios div.centralizar > div.box + label > select {
